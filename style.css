@@ -1,0 +1,109 @@
+.nav-link.active {
+  color: #4f46e5; /* Indigo-600 */
+  font-weight: 600;
+  position: relative;
+  display: inline-block; /* <-- Important */
+}
+
+.hero-section {
+  background-image: url("img/bg.png");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: center top;
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+    height: auto;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.shoe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.shoe-card {
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
