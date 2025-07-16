@@ -100,4 +100,105 @@ const products = [
     badge: "BESTSELLER",
     description: "Sophisticated slip-ons for every occasion",
   },
+  {
+    id: "11",
+    name: "New Balance 574",
+    price: 37.79,
+    image:
+      "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNuZWFrZXJ8ZW58MHwwfDB8fHww",
+    category: "sneakers",
+    badge: "NEW",
+    description: "Elegant and comfortable sneakers for everyday wear",
+  },
+  {
+    id: "12",
+    name: "Casual Chukka Boots",
+    price: 119.99,
+    image:
+      "https://images.unsplash.com/photo-1732225168066-a754dee78bec?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJvb3R8ZW58MHwwfDB8fHww",
+    category: "boots",
+    badge: null,
+    description: "Premium leather for a polished look",
+  },
+  {
+    id: "13",
+    name: "Adidas Sneakers",
+    price: 51.99,
+    originalPrice: 69.99,
+    image:
+      "https://images.unsplash.com/photo-1521774971864-62e842046145?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c25lYWtlcnxlbnwwfDB8MHx8fDA%3D",
+    category: "sneakers",
+    badge: "SALE",
+    description: "Classic style with modern comfort",
+  },
+  {
+    id: "14",
+    name: "Business Casual Loafers",
+    price: 89.99,
+    image:
+      "https://images.unsplash.com/photo-1426649397221-b62c5a7824ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9hZmVyc3xlbnwwfDB8MHx8fDA%3D",
+    category: "loafers",
+    badge: null,
+    description: "Perfect for business casual occasions",
+  },
+  {
+    id: "15",
+    name: "Air Jordan Retro",
+    price: 33.99,
+    image:
+      "https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNuZWFrZXJ8ZW58MHwwfDB8fHww",
+    category: "sneakers",
+    badge: "TRENDING",
+    description: "Throwback style with modern comfort",
+  },
+  {
+    id: "16",
+    name: "Doc Martens 1460",
+    price: 121.99,
+    image:
+      "https://images.unsplash.com/photo-1481729379561-01e43a3e1ed4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Ym9vdHN8ZW58MHwwfDB8fHww",
+    category: "boots",
+    badge: null,
+    description: "Rugged and stylish boots for any occasion",
+  },
+  {
+    id: "17",
+    name: "Boat Loafers",
+    price: 69.99,
+    image:
+      "https://images.unsplash.com/photo-1616243344308-04fb7e776cfe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGxvYWZlcnN8ZW58MHwwfDB8fHww",
+    category: "loafers",
+    badge: null,
+    description: "Matches any outfit",
+  },
+  {
+    id: "18",
+    name: "Stylish Ankle Boots",
+    price: 145.99,
+    image:
+      "https://images.unsplash.com/photo-1554133818-7bb790d55236?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJvb3RzfGVufDB8MHwwfHx8MA%3D%3D",
+    category: "boots",
+    badge: "NEW",
+    description: "Elegant ankle boots for a chic look",
+  },
+  {
+    id: "19",
+    name: "Converse Chuck Taylor",
+    price: 84.99,
+    image:
+      "https://images.unsplash.com/photo-1578986175247-7d60c6df07c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNuZWFrZXJ8ZW58MHwwfDB8fHww",
+    category: "sneakers",
+    badge: "BESTSELLER",
+    description: "Breathable knit upper for all-day wear",
+  },
+  {
+    id: "20",
+    name: "Plaid Slip-on",
+    price: 19.99,
+    image:
+      "https://images.unsplash.com/photo-1542619239-7ed243c6d143?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTN8fGxvYWZlcnN8ZW58MHwwfDB8fHww",
+    category: "loafers",
+    badge: null,
+    description: "Casual but highly comfy",
+  },
 ];

@@ -16,6 +16,7 @@ const cartItemsContainer = document.getElementById("cart-items");
 const emptyCartMessage = document.getElementById("empty-cart-message");
 const cartSubtotal = document.getElementById("cart-subtotal");
 const checkoutBtn = document.getElementById("checkout-btn");
+const continueShopping = document.getElementById("continue-shopping");
 
 let cart = [];
 
@@ -34,7 +35,7 @@ function closeCartSidebar() {
 
 closeCart.addEventListener("click", closeCartSidebar);
 cartOverlay.addEventListener("click", closeCartSidebar);
-
+continueShopping.addEventListener("click", closeCartSidebar);
 
 // Add to Cart Functionality
 document.querySelectorAll(".add-to-cart").forEach((button) => {
@@ -220,4 +221,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       }
     }
   });
+});
+
+// Scroll to Top Button
+const scrollBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.remove("hidden");
+  } else {
+    scrollBtn.classList.add("hidden");
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });

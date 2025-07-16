@@ -14,9 +14,9 @@ function renderProducts(productList) {
     card.innerHTML = `
       <div class="relative">
         <img
-          src="${product.image || '#'}"
-          alt="${product.name || 'Product'}"
-          class="w-full h-64 object-cover"
+          src="${product.image || "#"}"
+          alt="${product.name || "Product"}"
+          class="w-full h-64 object-cover cursor-pointer product-img"
         />
         ${
           product.badge
@@ -58,6 +58,7 @@ function renderProducts(productList) {
   });
 
   attachAddToCartHandlers();
+  setupLightbox();
 }
 
 // Add-to-cart button listeners
@@ -86,10 +87,48 @@ function attachAddToCartHandlers() {
       document.body.appendChild(notification);
 
       setTimeout(() => {
-        notification.classList.add("opacity-0", "transition-opacity", "duration-300");
+        notification.classList.add(
+          "opacity-0",
+          "transition-opacity",
+          "duration-300"
+        );
         setTimeout(() => notification.remove(), 300);
       }, 2000);
     });
+  });
+}
+
+function setupLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.getElementById("lightbox-close");
+
+  document.querySelectorAll(".product-img").forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+      lightboxImg.classList.remove("animate__fadeOut");
+      lightboxImg.classList.add("animate__fadeIn");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  function closeLightbox() {
+    lightboxImg.classList.remove("animate__fadeIn");
+    lightboxImg.classList.add("animate__fadeOut");
+
+    setTimeout(() => {
+      lightbox.classList.add("hidden");
+      lightboxImg.src = "";
+      document.body.style.overflow = "auto";
+    }, 500); // Matches animate.css fadeOut duration
+  }
+
+  closeBtn.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
   });
 }
 

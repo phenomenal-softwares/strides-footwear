@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stride | Collections</title>
+    <title>Contact Us | Stride Footwear</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -13,7 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="icon" href="img/icon.png" />
+    <link
+      rel="icon"
+      href="img/icon.png"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-gray-50 font-sans">
@@ -32,13 +35,13 @@
           <a href="/" class="nav-link font-medium">
             <i class="fas fa-home mr-1"></i> Home
           </a>
-          <a href="collections.html" class="nav-link font-medium active">
+          <a href="collections.html" class="nav-link font-medium">
             <i class="fas fa-th-large mr-1"></i> Collections
           </a>
           <a href="about.html" class="nav-link font-medium">
             <i class="fas fa-info-circle mr-1"></i> About
           </a>
-          <a href="contact.html" class="nav-link font-medium">
+          <a href="contact.html" class="nav-link font-medium active">
             <i class="fas fa-envelope mr-1"></i> Contact
           </a>
         </nav>
@@ -73,7 +76,7 @@
         id="mobile-menu"
         class="hidden md:hidden bg-white py-4 px-4 shadow-md"
       >
-        <a href="/" class="block py-2 font-medium active">
+        <a href="/" class="block py-2 font-medium">
           <i class="fas fa-home mr-2"></i> Home
         </a>
         <a href="collections.html" class="block py-2 font-medium">
@@ -82,90 +85,195 @@
         <a href="about.html" class="block py-2 font-medium">
           <i class="fas fa-info-circle mr-2"></i> About
         </a>
-        <a href="contact.html" class="block py-2 font-medium">
+        <a href="contact.html" class="block py-2 font-medium active">
           <i class="fas fa-envelope mr-2"></i> Contact
         </a>
       </div>
     </header>
 
-    <!-- ✅ Collections Hero Section -->
-    <section class="py-16 bg-white">
-      <div
-        class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12"
-      >
-        <!-- Text Column -->
-        <div
-          class="md:w-1/2 text-center md:text-left animate__animated animate__fadeInLeft"
-        >
-          <h1 class="text-4xl font-bold mb-4">Explore the Collection</h1>
-          <p class="text-gray-600 mb-6">
-            From timeless classics to modern essentials, find the perfect pair
-            to elevate every step. Whether it’s sneakers, boots, or loafers —
-            we’ve got something for every stride.
-          </p>
-        </div>
-
-        <!-- Image Column -->
-        <div class="md:w-1/2 animate__animated animate__fadeInRight">
-          <img
-            src="https://images.unsplash.com/photo-1563434049350-09568e40b8b1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFsZSUyMGZvb3R3ZWFyfGVufDB8MHwwfHx8MA%3D%3D"
-            alt="Footwear Display"
-            class="rounded-lg shadow-lg w-full h-auto object-cover"
-          />
-        </div>
+    <section class="bg-indigo-600 text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl font-bold mb-4">We’d Love to Hear from You</h1>
+        <p class="max-w-xl mx-auto text-lg">
+          Whether it’s a question about our products, an issue with your order,
+          or just a hello — we’re here for you.
+        </p>
       </div>
     </section>
 
-    <!-- PRODUCTS SECTION -->
-    <section id="collections" class="py-16 bg-gray-50">
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
       <div class="container mx-auto px-4">
-        <!-- Heading + Filters: stacked on mobile, row on desktop -->
-        <div
-          class="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-6"
-        >
-          <h2 class="text-3xl font-bold text-center md:text-left">
-            Our Full Collection
-          </h2>
+        <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+            <p class="text-gray-600 mb-6">
+              Have questions about our products or need assistance with your
+              order? Our team is here to help.
+            </p>
 
-          <div class="flex flex-wrap justify-center md:justify-end gap-2">
-            <button
-              class="filter-btn active px-4 py-2 bg-indigo-600 text-white rounded-full text-sm hover:bg-indigo-700 transition"
-              data-category="all"
-            >
-              All
-            </button>
-            <button
-              class="filter-btn px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full text-sm hover:bg-indigo-600 hover:text-white transition"
-              data-category="sneakers"
-            >
-              Sneakers
-            </button>
-            <button
-              class="filter-btn px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full text-sm hover:bg-indigo-600 hover:text-white transition"
-              data-category="boots"
-            >
-              Boots
-            </button>
-            <button
-              class="filter-btn px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-full text-sm hover:bg-indigo-600 hover:text-white transition"
-              data-category="loafers"
-            >
-              Loafers
-            </button>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <i class="fas fa-map-marker-alt text-indigo-600 mt-1 mr-4"></i>
+                <div>
+                  <h4 class="font-medium">Address</h4>
+                  <p class="text-gray-600">
+                    123 Shoe Street, Footwear City, FC 12345
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <i class="fas fa-phone-alt text-indigo-600 mt-1 mr-4"></i>
+                <div>
+                  <h4 class="font-medium">Phone</h4>
+                  <p class="text-gray-600">(123) 456-7890</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <i class="fas fa-envelope text-indigo-600 mt-1 mr-4"></i>
+                <div>
+                  <h4 class="font-medium">Email</h4>
+                  <p class="text-gray-600">info@stridefootwear.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-1"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600"
+                />
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="bg-indigo-600 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-700 transition duration-300"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Products Grid -->
-        <div
-          id="product-grid"
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
-        >
-          <!-- Products are injected here -->
+    <!-- Google Map Section -->
+    <section class="mt-12">
+      <div class="container mx-auto px-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.0240505986013!2d-122.08424928469144!3d37.42206597982511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb739f8cf234d%3A0x998080d4c77ec57!2sGoogleplex!5e0!3m2!1sen!2sus!4v1608265298776!5m2!1sen!2sus"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-lg shadow-lg"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">
+          Frequently Asked Questions
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 class="font-semibold text-lg mb-2">
+              What is your return policy?
+            </h4>
+            <p class="text-gray-600">
+              You can return any unused product within 30 days of purchase. Just
+              make sure it's in the original packaging.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-lg mb-2">
+              How long does shipping take?
+            </h4>
+            <p class="text-gray-600">
+              Standard shipping takes 3–5 business days. Express delivery is
+              available at checkout.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-lg mb-2">
+              Do you ship internationally?
+            </h4>
+            <p class="text-gray-600">
+              Yes, we ship to over 40 countries worldwide. Shipping rates and
+              times vary by location.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-lg mb-2">
+              What sizes are available?
+            </h4>
+            <p class="text-gray-600">
+              We offer men's sizes from US 6 to US 14. Be sure to check our size
+              guide for accurate fit.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-lg mb-2">How do I track my order?</h4>
+            <p class="text-gray-600">
+              After placing an order, you’ll receive a tracking link via email
+              as soon as it ships.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-lg mb-2">
+              Can I modify my order after placing it?
+            </h4>
+            <p class="text-gray-600">
+              Yes — if your order hasn't shipped yet. Contact us within 12 hours
+              of placing your order to make changes.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ✅ NEWSLETTER SECTION -->
+    <!-- Newsletter -->
     <section class="py-16 bg-indigo-600 text-white">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
@@ -188,86 +296,15 @@
       </div>
     </section>
 
-    <!-- ✅ CONTACT SECTION -->
-    <section id="contact" class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
-            <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
-            <p class="text-gray-600 mb-6">
-              Have questions about our products or need assistance with your
-              order?
-            </p>
-            <div class="space-y-4">
-              <div class="flex items-start">
-                <i class="fas fa-map-marker-alt text-indigo-600 mt-1 mr-4"></i>
-                <div>
-                  <h4 class="font-medium">Address</h4>
-                  <p class="text-gray-600">123 Shoe Street, Footwear City</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-phone-alt text-indigo-600 mt-1 mr-4"></i>
-                <div>
-                  <h4 class="font-medium">Phone</h4>
-                  <p class="text-gray-600">(123) 456-7890</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-envelope text-indigo-600 mt-1 mr-4"></i>
-                <div>
-                  <h4 class="font-medium">Email</h4>
-                  <p class="text-gray-600">info@stridefootwear.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <form class="space-y-4">
-              <div>
-                <label for="name" class="block text-sm font-medium mb-1"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                />
-              </div>
-              <div>
-                <label for="email" class="block text-sm font-medium mb-1"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                />
-              </div>
-              <div>
-                <label for="message" class="block text-sm font-medium mb-1"
-                  >Message</label
-                >
-                <textarea
-                  id="message"
-                  rows="4"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="bg-indigo-600 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-700 transition duration-300"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Floating Support CTA -->
+    <a
+      href="mailto:info@phenomenalproductions.com.ng"
+      class="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-3 rounded-full shadow-lg z-50 transition duration-300"
+    >
+      <i class="fas fa-headset mr-2"></i>Chat with Support
+    </a>
 
-    <!-- ✅ FOOTER -->
+    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -303,36 +340,76 @@
               ></a>
             </div>
           </div>
+
           <div>
             <h4 class="text-lg font-semibold mb-4">Shop</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">All Products</a></li>
-              <li><a href="#" class="hover:text-white">New Arrivals</a></li>
-              <li><a href="#" class="hover:text-white">Best Sellers</a></li>
-              <li><a href="#" class="hover:text-white">Sale</a></li>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >All Products</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >New Arrivals</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Best Sellers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Sale</a>
+              </li>
             </ul>
           </div>
+
           <div>
             <h4 class="text-lg font-semibold mb-4">Customer Service</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Contact Us</a></li>
-              <li><a href="#" class="hover:text-white">FAQs</a></li>
+            <ul class="space-y-2">
               <li>
-                <a href="#" class="hover:text-white">Shipping & Returns</a>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Contact Us</a
+                >
               </li>
-              <li><a href="#" class="hover:text-white">Size Guide</a></li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Shipping & Returns</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Size Guide</a
+                >
+              </li>
             </ul>
           </div>
+
           <div>
             <h4 class="text-lg font-semibold mb-4">About</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white">Our Story</a></li>
-              <li><a href="#" class="hover:text-white">Sustainability</a></li>
-              <li><a href="#" class="hover:text-white">Careers</a></li>
-              <li><a href="#" class="hover:text-white">Press</a></li>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Our Story</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Sustainability</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Press</a>
+              </li>
             </ul>
           </div>
         </div>
+
         <div
           class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
@@ -372,7 +449,7 @@
       </div>
     </footer>
 
-    <!-- CART SIDEBAR -->
+    <!-- Shopping Cart Sidebar -->
     <div
       id="cart-sidebar"
       class="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 overflow-y-auto"
@@ -388,11 +465,14 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
+
         <div id="cart-items" class="space-y-4 mb-6">
+          <!-- Cart items will be added here dynamically -->
           <p id="empty-cart-message" class="text-gray-500 text-center py-8">
             Your cart is empty
           </p>
         </div>
+
         <div class="border-t border-gray-200 pt-4 mb-6">
           <div class="flex justify-between mb-2">
             <span class="font-medium">Subtotal</span>
@@ -410,8 +490,6 @@
           <a
             href="#"
             class="block text-center mt-2 text-indigo-600 hover:text-indigo-800"
-            id="continue-shopping"
-            aria-label="Close cart"
             >Continue Shopping</a
           >
         </div>
@@ -422,38 +500,6 @@
       class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"
     ></div>
 
-    <!-- Lightbox Preview -->
-    <div
-      id="lightbox"
-      class="fixed inset-0 bg-black bg-opacity-80 hidden z-50 flex items-center justify-center"
-    >
-      <img
-        id="lightbox-img"
-        src=""
-        alt="Full Preview"
-        class="max-w-full max-h-[90vh] rounded-lg shadow-lg animate__animated"
-      />
-      <button
-        id="lightbox-close"
-        class="absolute top-6 right-6 text-white text-4xl font-bold"
-        aria-label="Close"
-      >
-        &times;
-      </button>
-    </div>
-
-    <!-- Scroll to Top Button -->
-    <button
-      id="scrollToTopBtn"
-      class="hidden fixed bottom-6 right-6 z-40 bg-indigo-600 text-white p-3 rounded-full shadow-lg opacity-50 hover:opacity-100 transition duration-300"
-      aria-label="Scroll to top"
-    >
-      <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- SCRIPTS -->
-    <script src="products.js"></script>
     <script src="script.js"></script>
-    <script src="collections.js"></script>
   </body>
 </html>

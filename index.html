@@ -9,12 +9,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="img/icon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body class="bg-gray-50 font-sans">
     <!-- Header/Navigation -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <header
+      class="sticky top-0 z-50 bg-white shadow-sm transition duration-300 ease-in-out"
+    >
       <div
         class="container mx-auto px-4 py-4 flex justify-between items-center"
       >
@@ -34,7 +41,7 @@
           <a href="about.html" class="nav-link font-medium">
             <i class="fas fa-info-circle mr-1"></i> About
           </a>
-          <a href="#contact" class="nav-link font-medium">
+          <a href="contact.html" class="nav-link font-medium">
             <i class="fas fa-envelope mr-1"></i> Contact
           </a>
         </nav>
@@ -75,10 +82,10 @@
         <a href="collections.html" class="block py-2 font-medium">
           <i class="fas fa-th-large mr-2"></i> Collections
         </a>
-        <a href="#about" class="block py-2 font-medium">
+        <a href="about.html" class="block py-2 font-medium">
           <i class="fas fa-info-circle mr-2"></i> About
         </a>
-        <a href="#contact" class="block py-2 font-medium">
+        <a href="contact.html" class="block py-2 font-medium">
           <i class="fas fa-envelope mr-2"></i> Contact
         </a>
       </div>
@@ -98,6 +105,7 @@
             comfort and sophistication.
           </p>
           <button
+            onclick="window.location.href='collections.html'"
             type="button"
             class="bg-white text-indigo-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300"
           >
@@ -318,7 +326,7 @@
           <div class="bg-gray-50 p-6 rounded-lg">
             <div class="flex items-center mb-4">
               <img
-                src="https://images.unsplash.com/photo-1603415526960-f7e0328b9f20?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Michael R."
                 class="w-12 h-12 rounded-full object-cover mr-4"
               />
@@ -343,7 +351,7 @@
           <div class="bg-gray-50 p-6 rounded-lg">
             <div class="flex items-center mb-4">
               <img
-                src="https://images.unsplash.com/photo-1573497019440-cf7c87b93de5?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&h=80&q=80"
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbGUlMjBwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D"
                 alt="David L."
                 class="w-12 h-12 rounded-full object-cover mr-4"
               />
@@ -648,8 +656,9 @@
         <div
           class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
-          <p class="text-gray-400 mb-4 md:mb-0">
-            © 2023 Stride Footwear. All rights reserved.
+          <p class="text-gray-400 mb-4 md:mb-0 text-center md:text-left">
+            © <span id="current-year"></span> Stride Footwear. All rights
+            reserved.
           </p>
           <div class="flex space-x-6">
             <a href="#" class="text-gray-400 hover:text-white"
@@ -661,6 +670,25 @@
             <a href="#" class="text-gray-400 hover:text-white">Cookies</a>
           </div>
         </div>
+
+        <!-- ✅ Product Credit -->
+        <div class="mt-6 text-center text-sm text-gray-400">
+          A Product of
+          <a
+            href="https://phenomenalproductions.com.ng"
+            target="_blank"
+            rel="noopener"
+            class="text-indigo-500 hover:underline font-medium"
+          >
+            Phenomenal Productions
+          </a>
+        </div>
+
+        <script>
+          // Set current year
+          document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+        </script>
       </div>
     </footer>
 
@@ -714,6 +742,15 @@
       id="cart-overlay"
       class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"
     ></div>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
+      class="hidden fixed bottom-6 right-6 z-40 bg-indigo-600 text-white p-3 rounded-full shadow-lg opacity-50 hover:opacity-100 transition duration-300"
+      aria-label="Scroll to top"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
