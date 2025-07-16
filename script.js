@@ -1,3 +1,12 @@
+// page loading
+window.addEventListener("load", () => {
+  const loader = document.getElementById("page-loader");
+  if (loader) {
+    loader.classList.add("opacity-0", "pointer-events-none", "transition", "duration-500");
+    setTimeout(() => loader.remove(), 600); // remove it fully after fade-out
+  }
+});
+
 // Mobile Menu Toggle
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
