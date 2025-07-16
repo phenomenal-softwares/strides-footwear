@@ -1,13 +1,19 @@
 .loader {
   border-top-color: transparent;
-  animation: spin 1s linear infinite;
+  animation: pulseLoader 1.2s ease-in-out infinite;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+@keyframes pulseLoader {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
   }
 }
+
 
 .nav-link.active {
   color: #4f46e5; /* Indigo-600 */
